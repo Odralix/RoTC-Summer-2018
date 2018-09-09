@@ -7,8 +7,9 @@ public class O_RandPowUps : MonoBehaviour
     public GameObject[] prefabs;
     public GameObject road;
     public Vector3 thePos;
-    public int nrOfPrefab;
-    public int nrOfSect;
+    public int minPUPsPerSect = 0;
+    public int maxPUPsPerSect = 4;
+    public int nrOfSect = 20;
 	// Use this for initialization
 	void Start ()
     {
@@ -17,13 +18,13 @@ public class O_RandPowUps : MonoBehaviour
 
         int nrOfPUPs = 0;
 
-        for (int i = 2; i < 20; i++)
+        for (int i = 2; i < nrOfSect; i++)
         {
-            nrOfPUPs = (int) (Mathf.Round(Random.Range(0, 4)));
+            nrOfPUPs = (int) (Mathf.Round(Random.Range(minPUPsPerSect, maxPUPsPerSect)));
             if(nrOfPUPs != 0)
             {
-                int lPoint = (i-1) * (vertices.Length / 20);
-                int hPoint = i * (vertices.Length / 20);
+                float lPoint = (i-1) * (vertices.Length / nrOfSect);
+                float hPoint = i * (vertices.Length / nrOfSect);
 
                 int []spawnPointLst;
 
