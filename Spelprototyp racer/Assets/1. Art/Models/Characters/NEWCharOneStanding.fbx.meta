@@ -1,0 +1,192 @@
+fileFormatVersion: 2
+guid: 32da356c3ab19564eaacff61c3757afe
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: group
+    100002: group1
+    100004: //RootNode
+    100006: pasted__curve2
+    100008: pasted__curve2 1
+    100010: pasted__polySurface15
+    100012: pasted__polySurface16
+    100014: pasted__polySurface17
+    100016: pasted__polySurface19
+    100018: pasted__polySurface33
+    100020: pasted__polySurface34
+    100022: pasted__polySurface35
+    100024: pasted__polySurface36
+    100026: pasted__polySurface37
+    100028: pasted__polySurface38
+    100030: pasted__polySurface39
+    100032: pasted__transform1
+    100034: pasted__transform1 1
+    100036: polySurface18
+    400000: group
+    400002: group1
+    400004: //RootNode
+    400006: pasted__curve2
+    400008: pasted__curve2 1
+    400010: pasted__polySurface15
+    400012: pasted__polySurface16
+    400014: pasted__polySurface17
+    400016: pasted__polySurface19
+    400018: pasted__polySurface33
+    400020: pasted__polySurface34
+    400022: pasted__polySurface35
+    400024: pasted__polySurface36
+    400026: pasted__polySurface37
+    400028: pasted__polySurface38
+    400030: pasted__polySurface39
+    400032: pasted__transform1
+    400034: pasted__transform1 1
+    400036: polySurface18
+    2100000: lambert4
+    2100002: lambert3
+    2100004: lambert1
+    2100006: lambert5
+    2100008: pasted__aiStandardSurface3
+    2300000: pasted__polySurface15
+    2300002: pasted__polySurface16
+    2300004: pasted__polySurface17
+    2300006: pasted__polySurface19
+    2300008: pasted__polySurface33
+    2300010: pasted__polySurface34
+    2300012: pasted__polySurface35
+    2300014: pasted__polySurface36
+    2300016: pasted__polySurface37
+    2300018: pasted__polySurface38
+    2300020: pasted__polySurface39
+    2300022: polySurface18
+    3300000: pasted__polySurface15
+    3300002: pasted__polySurface16
+    3300004: pasted__polySurface17
+    3300006: pasted__polySurface19
+    3300008: pasted__polySurface33
+    3300010: pasted__polySurface34
+    3300012: pasted__polySurface35
+    3300014: pasted__polySurface36
+    3300016: pasted__polySurface37
+    3300018: pasted__polySurface38
+    3300020: pasted__polySurface39
+    3300022: polySurface18
+    4300000: polySurface18
+    4300002: pasted__polySurface19
+    4300004: pasted__polySurface15
+    4300006: pasted__polySurface16
+    4300008: pasted__polySurface17
+    4300010: pasted__polySurface39
+    4300012: pasted__polySurface33
+    4300014: pasted__polySurface34
+    4300016: pasted__polySurface35
+    4300018: pasted__polySurface36
+    4300020: pasted__polySurface37
+    4300022: pasted__polySurface38
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: 42207cacf51ccfc4c9fe3098095b5cf5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert3
+    second: {fileID: 2100000, guid: 57e145d6428bde74e928116b0d4fad50, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert4
+    second: {fileID: 2100000, guid: e5a50d4b5e414284bbc37f96ae506321, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert5
+    second: {fileID: 2100000, guid: f09ce431516953547937a3510d13bef2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__aiStandardSurface3
+    second: {fileID: 2100000, guid: 9715d53139aa6a042bcf5bc9ab66f672, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
