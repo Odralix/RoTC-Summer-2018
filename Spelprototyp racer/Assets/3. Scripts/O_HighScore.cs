@@ -56,6 +56,7 @@ public class O_HighScore : MonoBehaviour
     public void addScore(float score)
     {
         pName.text = PlayerPrefs.GetString("PlayerName");
+        Debug.Log(pName.text);
         //Debug.Log(pName.text);
         //Do Nothing if a name hasn't been put in
         if(pName.text == "")

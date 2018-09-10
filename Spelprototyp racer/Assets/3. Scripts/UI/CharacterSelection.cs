@@ -84,7 +84,7 @@ public class CharacterSelection : MonoBehaviour {
         PlayerPrefs.DeleteKey("PlayerName");
         Text pName = crysName;
         PlayerPrefs.SetString("PlayerName", pName.text);
-        index = 0;
+        index = 1;
     }
 
     public void SphereSelect()
@@ -92,7 +92,7 @@ public class CharacterSelection : MonoBehaviour {
         PlayerPrefs.DeleteKey("PlayerName");
         Text pName = sphereName;
         PlayerPrefs.SetString("PlayerName", pName.text);
-        index = 1;
+        index = 0;
     }
     public void Confirmbutton()
     {

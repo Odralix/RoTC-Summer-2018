@@ -32,7 +32,7 @@ public class GameOverManager : MonoBehaviour {
                 {
                     scoreSetter.addScore(300-playerFinalTime.playerTimer);
                     scoreSetter.SaveScores();
-                    SceneManager.LoadScene("MainMenu");
+                    SceneManager.LoadScene("NewMainMenu");
                 }
             }
         }
@@ -57,11 +57,12 @@ public class GameOverManager : MonoBehaviour {
         Debug.Log("WinScreen");
         anim.SetTrigger("Victory");
         restartTimer += Time.deltaTime;
+        restartTimer = restartDelay - 5;
         if (restartTimer >= restartDelay)
         {
             scoreSetter.addScore(300-playerFinalTime.playerTimer);
             scoreSetter.SaveScores();
-            SceneManager.LoadScene("MainMenu");
+            SceneManager.LoadScene("NewMainMenu");
         }
     }
 }
