@@ -81,7 +81,7 @@ Material:
     - _DstBlend: 0
     - _EnableFog: 0
     - _EnableRotation: 1
-    - _Exposure: 1.52
+    - _Exposure: 0.65
     - _FogFill: 0.856
     - _FogHeight: 0
     - _FogSmoothness: 0.667
