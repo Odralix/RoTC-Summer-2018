@@ -2,23 +2,25 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class CharacterSelection : MonoBehaviour {
 
     private GameObject[] characterList;
     public int index;
-
+    public Text crysName;
+    public Text sphereName;
     private void Start()
     {
-        index = PlayerPrefs.GetInt("CharacterSelected");
+        //index = PlayerPrefs.GetInt("CharacterSelected");
 
-        characterList = new GameObject[transform.childCount];
+        //characterList = new GameObject[transform.childCount];
 
-        //Fill the array with the models 
-        for (int i = 0; i < transform.childCount; i++ )
-        {
-            characterList[i] = transform.GetChild(i).gameObject;
-        }
+        ////Fill the array with the models 
+        //for (int i = 0; i < transform.childCount; i++ )
+        //{
+        //    characterList[i] = transform.GetChild(i).gameObject;
+        //}
     }
 
     public void ToggleLeft()
@@ -77,9 +79,24 @@ public class CharacterSelection : MonoBehaviour {
         }
     }
 
+    public void CrystalSelect()
+    {
+        PlayerPrefs.DeleteKey("PlayerName");
+        Text pName = crysName;
+        PlayerPrefs.SetString("PlayerName", pName.text);
+        index = 0;
+    }
 
+    public void SphereSelect()
+    {
+        PlayerPrefs.DeleteKey("PlayerName");
+        Text pName = sphereName;
+        PlayerPrefs.SetString("PlayerName", pName.text);
+        index = 1;
+    }
     public void Confirmbutton()
     {
+        PlayerPrefs.DeleteKey("CharacterSelected");
         PlayerPrefs.SetInt("CharacterSelected", index);
 
         SceneManager.LoadScene("LEVEL.1.5");

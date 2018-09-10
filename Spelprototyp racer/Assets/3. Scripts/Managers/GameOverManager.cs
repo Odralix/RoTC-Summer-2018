@@ -30,7 +30,7 @@ public class GameOverManager : MonoBehaviour {
                 restartTimer += Time.deltaTime;
                 if (restartTimer >= restartDelay)
                 {
-                    scoreSetter.addScore(playerFinalTime.playerTimer);
+                    scoreSetter.addScore(300-playerFinalTime.playerTimer);
                     scoreSetter.SaveScores();
                     SceneManager.LoadScene("MainMenu");
                 }
@@ -59,7 +59,7 @@ public class GameOverManager : MonoBehaviour {
         restartTimer += Time.deltaTime;
         if (restartTimer >= restartDelay)
         {
-            scoreSetter.addScore(playerFinalTime.playerTimer);
+            scoreSetter.addScore(300-playerFinalTime.playerTimer);
             scoreSetter.SaveScores();
             SceneManager.LoadScene("MainMenu");
         }
