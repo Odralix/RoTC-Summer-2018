@@ -9,6 +9,7 @@ public class GameOverManager : MonoBehaviour {
     public float shadowCatchTime = 20f;
     public GameObject collision;
     public CountUpTimer playerFinalTime;
+    public O_HighScore scoreSetter;
 
     Animator anim;
     float restartTimer;
@@ -29,6 +30,8 @@ public class GameOverManager : MonoBehaviour {
                 restartTimer += Time.deltaTime;
                 if (restartTimer >= restartDelay)
                 {
+                    scoreSetter.addScore(playerFinalTime.playerTimer);
+                    scoreSetter.SaveScores();
                     SceneManager.LoadScene("MainMenu");
                 }
             }
@@ -56,6 +59,8 @@ public class GameOverManager : MonoBehaviour {
         restartTimer += Time.deltaTime;
         if (restartTimer >= restartDelay)
         {
+            scoreSetter.addScore(playerFinalTime.playerTimer);
+            scoreSetter.SaveScores();
             SceneManager.LoadScene("MainMenu");
         }
     }
