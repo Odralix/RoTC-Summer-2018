@@ -81,7 +81,7 @@ public class O_HighScore : MonoBehaviour
             hLST.Reverse();
 
             dictNames.Add(score, pName.text);
-
+            IntToText();
 
 
             if (hLST.Count > 10)
@@ -117,6 +117,7 @@ public class O_HighScore : MonoBehaviour
         ResetScore();
         for (int i = 0; i < hLST.Count; i++)
         {
+            Debug.Log(hLST.Count);
             PlayerPrefs.SetString("pName" + i.ToString(), disNamesLst[i].text);
             PlayerPrefs.SetFloat("HS" + i.ToString(), hLST[i]); //Not using display list since we'll need the actual vaules to feed into the dictonary at start up
         }
